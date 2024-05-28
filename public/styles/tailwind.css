@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body {
+        @apply h-screen;
+    }
+    body {
+        @apply bg-white text-[#212529] oswald;
+    }
+    @media screen and (max-width: 640px) {
+        html {
+            @apply text-sm;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        html {
+            @apply text-xs;
+        }
+    }
+}
+
+@layer components {
+    .button {
+        @apply px-[0.75rem] py-[0.375rem] rounded-xl;
+    }
+    .table {
+        border-collapse: separate;
+        border-spacing: 0 1em;
+    }
+}
+
+@layer utilities {
+    .oswald {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+      }
+}

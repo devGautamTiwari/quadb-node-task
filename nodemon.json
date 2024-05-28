@@ -1,0 +1,5 @@
+{
+    "verbose": true,
+    "watch": ["**/*"],
+    "ignore": ["node_modules", "dist", "public/styles/index.css"]
+}
